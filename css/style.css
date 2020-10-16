@@ -16,22 +16,52 @@ header::after {
   clear: both;
   display: table;
 }
-
-body{
+/* /general settings */
+/* font settings */
+body {
   font-family: 'Nunito', sans-serif;
   font-weight: 500;
   color: #33475B;
 }
 
-.btn{
+h1{
+  font-size: 42px;
+  font-weight: 800;
+}
+
+h2 {
+ font-size: 35px;
+ font-weight: 700;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+
+h4{
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 30px 0;
+}
+
+p {
+  font-size: 19px;
+  line-height: 28px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.btn {
   color: white;
   background-color: #FF7A59;
   padding: 20px 40px;
   border-radius: 5px;
   border: 1px solid #FF7A59;
 }
-
-/* /general settings */
+/*font settings */
 
 /* header settings */
 #bannertop {
@@ -140,16 +170,8 @@ a {
   width: 40%;
   padding: 60px 0;
 }
-
-.contentheader h1{
-  font-size: 42px;
-  font-weight: 800;
-  margin-bottom: 30px;
-}
 .contentheader p{
-  font-size: 16px;
-  text-align: justify;
-  line-height: 23px;
+  margin-top: 30px;
   margin-bottom: 55px;
 }
 .contentheader .littlep{
@@ -160,10 +182,81 @@ a {
 /* header settings */
 
 /* main settings */
+main::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* first section */
 #firstsection {
-  height: 800px;
+  height: 1300px;
+  width: 100%;
   background-color: #F0F8FF;
 }
+
+/* first paragraph */
+#paragraph {
+  width: 65%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+#paragraph > img {
+  width: 250px;
+}
+/* /first paragraph */
+/* second paragraph */
+#freecrm {
+  width: 100%;
+  margin-top: 60px;
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px rgba(214,223,232,1);
+  border-radius: 5px;
+}
+#freecrm::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#imagescrm {
+  float: left;
+  display: inline-block;
+  text-align: center;
+  width: 35%;
+  padding: 80px;
+}
+#imgcrm > img {
+  width: 150px;
+  margin-bottom: 50px;
+}
+
+#descriptioncrm {
+  float: left;
+  display: inline-block;
+  width: 65%;
+  padding: 80px;
+  padding-left: 0;
+}
+#textcrm {
+  width: 85%;
+  margin-left: 0;
+}
+
+#listcrm ul li{
+  float: left;
+  text-decoration: none;
+  list-style: none;
+  margin-right: 30px;
+  font-size: 18px;
+}
+.fa-check-circle{
+  margin-right: 10px;
+  color: #FF7A59;
+}
+/* /second paragraph */
+
+/* /first section */
 
 #secondsection {
   height: 400px;
