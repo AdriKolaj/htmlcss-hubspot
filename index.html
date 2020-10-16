@@ -5,6 +5,7 @@
     <title>HubSpot</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900;&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -15,14 +16,24 @@
           <!-- contenitore più piccolo per layout -->
           <div class="widthcontainer">
             <!-- parte sinistra header -->
-            <a href="#"><i class="fas fa-globe-europe"></i> English <i class="fas fa-chevron-down"></i></a>
-            <span>|</span>
-            <a href="#">Contact Us</a>
+            <div class="topleft">
+              <ul>
+                <li>
+                  <a href="#"><i class="fas fa-globe-europe"></i> English <i class="fas fa-chevron-down"></i></a>
+                </li>
+                <li>
+                  <a href="#">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /parte sinistra header -->
             <!-- parte destra header -->
-            <div class="buttonsright">
-              <i class="fas fa-search"></i>
-              <button type="button" name="login">Log In</button>
-              <button type="button" name="gethubspotfree">GetHubSpotFree</button>
+            <div class="linksright">
+              <ul>
+                <li><a href="#"><i class="fas fa-search"></i></a></li>
+                <li><a href="#" class="btn white">Log In</a></li>
+                <li><a href="#" class="btn smaller">GetHubSpotFree</a></li>
+              </ul>
             </div>
           </div>
           <!-- /contenitore più piccolo per layout -->
@@ -31,39 +42,49 @@
         <!-- secondo banner -->
         <div id="bannerbottom">
           <!-- contenitore più piccolo per layout -->
-          <div class="widthcontainer right">
+          <div class="widthcontainer">
+            <!-- parte sinistra secondo header -->
             <img src="img/logo.svg" alt="logo hubspot">
+            <!-- /parte sinistra secondo header -->
+            <!-- parte destra secondo header -->
             <div class="linksright">
               <ul>
-                <li>Software <i class="fas fa-chevron-down"></i></li>
-                <li>Pricing</li>
-                <li>Resources <i class="fas fa-chevron-down"></i></li>
-                <li>Partners <i class="fas fa-chevron-down"></i></li>
-                <li>About <i class="fas fa-chevron-down"></i></li>
+                <li>
+                  <a href="#">Software <i class="fas fa-chevron-down"></i></a>
+                </li>
+                <li>
+                  <a href="#">Pricing</a>
+                </li>
+                <li>
+                  <a href="#">Resources <i class="fas fa-chevron-down"></i></a>
+                </li>
+                <li>
+                  <a href="#">Partners <i class="fas fa-chevron-down"></i></a>
+                </li>
+                <li>
+                  <a href="#">About <i class="fas fa-chevron-down"></i></a>
+                </li>
               </ul>
             </div>
+            <!-- parte destra secondo header -->
           </div>
           <!-- /contenitore più piccolo per layout -->
         </div>
         <!-- /secondo banner -->
-        <!-- parte centrale header -->
-        <div id="headercentral">
+        <!-- parte principale header -->
+        <div id="headermain">
           <!-- contenitore più piccolo per layout -->
           <div class="widthcontainer">
-            <div class="widthheadercentral">
+            <div class="contentheader">
               <h1>There's a better way to grow.</h1>
-              <p>Marketing, sales and service software that helps your business grow without compromise. Because "good for the business" should also mean "good for the customer.""</p>
-              <button type="button" name="getubspot">GetHubSpotFree</button>
-              <p>Get started with FREE tools, and upgrade as you grow.</p>
+              <p>Marketing, sales and service software that helps your business grow without compromise. Because "good for the business" should also mean "good for the customer."</p>
+              <a href="#" class="btn">GetHubSpotFree</a>
+              <p class="littlep">Get started with FREE tools, and upgrade as you grow.</p>
             </div>
           </div>
           <!-- /contenitore più piccolo per layout -->
         </div>
-        <!-- parte centrale header -->
-        <!-- parte inferiore header -->
-        <div id="headerbottom">
-        </div>
-        <!-- /parte inferiore header -->
+        <!-- parte principale header -->
     </header>
     <!-- /intestazione pagina -->
 
@@ -73,7 +94,7 @@
       <div id="firstsection">
         <!-- contenitore più piccolo per layout -->
         <div class="widthcontainer">
-
+          
         </div>
         <!-- /contenitore più piccolo per layout -->
       </div>
