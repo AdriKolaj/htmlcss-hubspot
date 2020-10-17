@@ -189,7 +189,7 @@ main::after {
 }
 /* first section */
 #firstsection {
-  height: 1300px;
+  height: 1740px;
   width: 100%;
   background-color: #F0F8FF;
 }
@@ -227,7 +227,7 @@ main::after {
   padding: 80px;
 }
 #imgcrm > img {
-  width: 150px;
+  height: 130px;
   margin-bottom: 50px;
 }
 
@@ -242,13 +242,27 @@ main::after {
   width: 85%;
   margin-left: 0;
 }
+#textcrm > h4::after{
+  display: inline-block;
+  content:"";
+  height: 7px;
+  margin-left: 70px;
+  width: 40%;
+  border-top: 2px solid #33475B;
+}
 
+#listcrm::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 #listcrm ul li{
   float: left;
   text-decoration: none;
   list-style: none;
   margin-right: 30px;
   font-size: 18px;
+  text-transform: capitalize;
 }
 .fa-check-circle{
   margin-right: 10px;
@@ -256,13 +270,79 @@ main::after {
 }
 /* /second paragraph */
 
+/* third paragraph */
+#thirdparagraph::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.sellcolums {
+  float: left;
+  display: inline-block;
+  width: 30%;
+  margin: 60px 0;
+  margin-right: 5%;
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px rgba(214,223,232,1);
+  border-radius: 5px;
+}
+.sellcolums:last-child{
+  margin-right: 0;
+}
+
+.firstblock, .secondblock {
+  text-align: center;
+  padding: 40px 40px 0 40px;
+
+}
+
+.firstblock > img {
+  height: 130px;
+  padding-bottom: 40px;
+}
+.firstblock > p {
+  line-height: 35px;
+  padding-bottom: 80px;
+  border-bottom: 2px solid #33475B;
+}
+
+.secondblock {
+  padding-top: 4px;
+}
+
+.listhub{
+  padding-bottom: 70px;
+}
+.listhub ul li{
+  text-decoration: none;
+  list-style: none;
+  margin-right: 30px;
+  font-size: 18px;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.secondblock .btncrm {
+  margin-bottom: 50px;
+}
+/* /third paragraph */
 /* /first section */
 
+/* second section */
 #secondsection {
   height: 400px;
   background: rgb(0,164,189);
   background: linear-gradient(90deg, rgba(0,164,189,1) 0%, rgba(0,188,166,1) 97%);
 }
+
+#secondsection  h2 {
+  padding-top: 60px;
+  text-align: center;
+  color: white;
+}
+
+/* /second section */
 
 #thirdsection {
   height: 400px;
