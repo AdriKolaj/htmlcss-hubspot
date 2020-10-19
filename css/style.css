@@ -167,7 +167,31 @@ a {
   padding: 10px;
 }
 /* parte destra */
+/* widget */
+.widget{
+  position: fixed;
+  z-index: 2;
+  bottom: 20px;
+  right: 20px;
+  height: 70px;
+  width: 70px;
+  background-color: #425B76;
+  border-radius: 50%;
+}
+.widget:hover{
+  cursor: pointer;
+  box-shadow: 0px 0px 7px 10px rgba(66,91,118,0.18);
+}
 
+.widget > .fas{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 35px;
+  color: white;
+}
+/* /widget */
 /* parte principale header */
 #headermain {
   position: relative;
