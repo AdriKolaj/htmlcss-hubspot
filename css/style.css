@@ -61,25 +61,37 @@ p {
   border-radius: 5px;
   border: 1px solid #FF7A59;
 }
+.btn:hover{
+  background: #FFBCAC;
+  border-color: #FFBCAC;
+}
 /*font settings */
 
 /* header settings */
 #bannertop {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 70px;
   line-height: 70px;
   border-bottom: 1px solid black;
   background-color: #F0F8FF;
+  z-index: 2;
 }
 
 #bannerbottom {
-  height: 70px;
-  line-height: 70px;
+  margin-top: 70px;
+  height: 80px;
+  line-height: 80px;
   background-color: white;
 }
 #bannerbottom .widthcontainer img {
   vertical-align: middle;
 }
-
+#bannerbottom img {
+  width: 120px;
+}
 
 /* parte sinistra */
 .topleft::after {
@@ -95,10 +107,16 @@ p {
   list-style: none;
 }
 .topleft ul li a {
-    padding-right: 15px;
-    text-decoration: none;
-    text-transform: capitalize;
-    color: inherit;
+  padding-right: 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 17px;
+  color: inherit;
+}
+.topleft ul li a:hover, #bannerbottom .linksright ul li a:hover {
+  color: #007A8C;
+  text-decoration: underline;
+  text-shadow: 0px 0px 1px #007A8C;
 }
 .topleft ul li::after {
   content: '| ';
@@ -113,9 +131,16 @@ p {
 .linksright {
   float: right;
 }
+.linksright ul::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 .linksright ul li {
-  display: inline-block;
+  float: left;
   padding-left: 20px;
+  font-size: 19px;
+  list-style: none;
 }
 a {
   text-transform: capitalize;
@@ -133,6 +158,10 @@ a {
   color: #FF7A59;
   background-color: white;
   padding: 10px;
+}
+.white:hover {
+  background-color: #FFF1EE;
+  border-color: #FF7A59;
 }
 .smaller {
   padding: 10px;
@@ -407,8 +436,9 @@ main::after {
   display: table;
 }
 #customers {
+  margin: 0 auto;
   margin-bottom: 0px;
-  width: 85%;
+  width: 80%;
 }
 
 #txtcustomers {
@@ -501,10 +531,16 @@ footer {
   font-size: 16px;
   text-transform: capitalize;
 }
+
 footer li {
   list-style: none;
   line-height: 40px;
 }
+footer li a:hover{
+  color: #65D1DE;
+  text-decoration: underline;
+}
+
 .column .btn {
   background-color: #cbd6e2;
   border: none;
@@ -512,6 +548,11 @@ footer li {
   line-height: 70px;
   padding: 10px;
 }
+.column .btn:hover {
+  background-color: #9db2c8;
+  text-decoration: none;
+}
+
 .column li a .fab{
   margin-right: 22px;
 }
