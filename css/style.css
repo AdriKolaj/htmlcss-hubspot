@@ -7,7 +7,7 @@
 
 .widthcontainer {
   width: 75%;
-  height: 100%;
+  /* height: 100%; */
   margin: auto;
 }
 
@@ -49,7 +49,7 @@ h4{
 
 p {
   font-size: 19px;
-  line-height: 28px;
+  line-height: 33px;
   margin-top: 25px;
   margin-bottom: 20px;
 }
@@ -76,13 +76,8 @@ p {
   line-height: 70px;
   background-color: white;
 }
-#bannerbottom .widthcontainer {
-  position: relative;
-}
 #bannerbottom .widthcontainer img {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  vertical-align: middle;
 }
 
 
@@ -166,15 +161,15 @@ a {
   border-bottom: 3px solid #33475B;
   background-color: #AFEBE4;
 }
-#headermain .widthcontainer .contentheader {
+#headermain .widthcontainer .contentcta {
   width: 40%;
   padding: 60px 0;
 }
-.contentheader p{
+.contentcta p {
   margin-top: 30px;
   margin-bottom: 55px;
 }
-.contentheader .littlep{
+.contentcta .littlep {
   margin-top: 55px;
   font-size: 13px;
 }
@@ -189,7 +184,7 @@ main::after {
 }
 /* first section */
 #firstsection {
-  height: 1740px;
+  /* height: 1740px; */
   width: 100%;
   background-color: #F0F8FF;
 }
@@ -242,7 +237,7 @@ main::after {
   width: 85%;
   margin-left: 0;
 }
-#textcrm > h4::after{
+#textcrm > h4::after {
   display: inline-block;
   content:"";
   height: 7px;
@@ -256,7 +251,7 @@ main::after {
   clear: both;
   display: table;
 }
-#listcrm ul li{
+#listcrm ul li {
   float: left;
   text-decoration: none;
   list-style: none;
@@ -264,7 +259,7 @@ main::after {
   font-size: 18px;
   text-transform: capitalize;
 }
-.fa-check-circle{
+.fa-check-circle {
   margin-right: 10px;
   color: #FF7A59;
 }
@@ -280,6 +275,7 @@ main::after {
 .sellcolums {
   float: left;
   display: inline-block;
+  max-height: 800px;
   width: 30%;
   margin: 60px 0;
   margin-right: 5%;
@@ -287,7 +283,7 @@ main::after {
   box-shadow: 0px 0px 10px 0px rgba(214,223,232,1);
   border-radius: 5px;
 }
-.sellcolums:last-child{
+.sellcolums:last-child {
   margin-right: 0;
 }
 
@@ -311,10 +307,10 @@ main::after {
   padding-top: 4px;
 }
 
-.listhub{
+.listhub {
   padding-bottom: 70px;
 }
-.listhub ul li{
+.listhub ul li {
   text-decoration: none;
   list-style: none;
   margin-right: 30px;
@@ -331,28 +327,237 @@ main::after {
 
 /* second section */
 #secondsection {
-  height: 400px;
   background: rgb(0,164,189);
   background: linear-gradient(90deg, rgba(0,164,189,1) 0%, rgba(0,188,166,1) 97%);
+  padding: 80px 0;
 }
-
-#secondsection  h2 {
-  padding-top: 60px;
+#secondsection .widthcontainer > h2 {
+  text-align: center;
+  padding: 0 40px;
+  color: white;
+}
+#secondsection .widthcontainer > p {
+  font-size: 17px;
+  margin: 30px 0;
   text-align: center;
   color: white;
 }
 
+/* tabella  */
+#table {
+  margin-top: 60px;
+}
+
+.tablecell {
+  float: left;
+  width: 25%;
+  padding: 30px 50px;
+  text-align: center;
+  color: white;
+  border-right: 1px solid white;
+}
+.tablecell:last-child {
+  border-right: none;
+}
+.tablecell .icon > img {
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.tabletxt > h2 {
+  font-size: 45px;
+}
+.tabletxt > p {
+  margin-bottom: 0;
+}
+
+.fa-plus {
+  font-size: 17px;
+  line-height: 45px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+#firstrow::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#firstrow .tablecell {
+  border-bottom: 1px solid white;
+}
+
+#secondrow::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* /tabella */
 /* /second section */
 
+/* third section */
 #thirdsection {
-  height: 400px;
-  background-color: white;
+  margin: 70px 0;
 }
+
+/* customers  */
+#customers:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#customers {
+  margin-bottom: 0px;
+  width: 85%;
+}
+
+#txtcustomers {
+  float: left;
+  width: 20%;
+}
+#txtcustomers > h2 {
+  font-size: 45px;
+}
+
+#logocustomers{
+  float: right;
+  width: 60%;
+}
+#logocustomers:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#logocustomers .logobg {
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding: 17px;
+}
+#logocustomers .logobg img {
+  width: 100%;
+}
+/* /customers */
+/* cta section */
+#maincta::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#maincta{
+  position: relative;
+  margin: 40px 0;
+  height: 100%;
+}
+#maincta .contentcta {
+  position: absolute;
+  float: left;
+  width: 40%;
+  height: 75%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#maincta .contentcta h2 {
+  text-transform: capitalize;
+
+}
+#imgcta {
+  float: right;
+  width: 30%;
+}
+#imgcta img {
+  width: 90%;
+}
+/* /cta section */
+/* /third section */
 /* /main settings */
 
 /* footer settings */
 footer {
-  height: 400px;
   background-color: #2D3E50;
+  font-size: 18px;
+  color: #cbd6e2;
 }
+
+/* footer upper */
+#footerupper::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#footerupper{
+  margin: 15px 0;
+  padding-top: 15px;
+  padding-bottom: 55px;
+}
+
+.column{
+  float: left;
+  width: 20%;
+  margin-right: 5%;
+}
+.column > p{
+  color: white;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+footer li {
+  list-style: none;
+  line-height: 40px;
+}
+.column .btn {
+  background-color: #cbd6e2;
+  border: none;
+  color: #2D3E50;
+  line-height: 70px;
+  padding: 10px;
+}
+.column li a .fab{
+  margin-right: 22px;
+}
+
+.languages::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.languages{
+  padding-bottom: 20px;
+  border-bottom: 1px solid #cbd6e2;
+  display: flex;
+  justify-content: center;
+}
+.languages li {
+  float: left;
+  margin-right: 25px;
+}
+  /* /footer upper */
+
+/* footer bottom */
+#footerbottom::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#footerbottom {
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footerleft {
+  float: left;
+}
+.footerleft p {
+  margin-top: 0;
+  color: white;
+}
+
+.footerright {
+  float: right;
+}
+.footerright ul li {
+  float: left;
+  margin-left: 30px;
+}
+/* /footer bottom */
 /* /footer settings */
