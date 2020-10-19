@@ -191,6 +191,38 @@ a {
   font-size: 35px;
   color: white;
 }
+
+.widgetchat {
+  z-index: 2;
+  position: fixed;
+  bottom: 120px;
+  right: 20px;
+  height: 160px;
+  width: 330px;
+  padding: 0 25px;
+  border-radius: 5px;
+  background-color: white;
+  padding-top: 20px;
+  box-shadow: 0px 0px 11px 3px rgba(66,91,118,0.48);
+}
+.widgetimg > img{
+  height: 70px;
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#cross{
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  font-size: 50px;
+  color: #abbdd0;
+}
+#cross:hover{
+  cursor: pointer;
+  color: #829cb8;
+}
 /* /widget */
 /* parte principale header */
 #headermain {
